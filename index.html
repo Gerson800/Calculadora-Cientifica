@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="display">
+        <div class="expression" id="expressionDisplay"></div>
+        <div class="current" id="currentDisplay">0</div>
+    </div>
+    <div class="buttons">
+        <!-- Fila 1: funciones avanzadas + limpieza -->
+        <button class="advanced" data-action="sqrt">√</button>
+        <button class="advanced" data-action="square">x²</button>
+        <button class="advanced" data-action="reciprocal">1/x</button>
+        <button class="clear-all" data-action="clearAll">AC</button>
+        <button class="delete" data-action="delete">⌫</button>
+
+        <!-- Fila 2 -->
+        <button class="advanced" data-action="percent">%</button>
+        <button class="advanced" data-action="plusminus">±</button>
+        <button class="advanced" data-action="power">xʸ</button>
+        <button class="operator" data-op="/">÷</button>
+        <button class="operator" data-op="*">×</button>
+
+        <!-- Fila 3 -->
+        <button class="number" data-num="7">7</button>
+        <button class="number" data-num="8">8</button>
+        <button class="number" data-num="9">9</button>
+        <button class="operator" data-op="-">−</button>
+        <button class="operator" data-op="+">+</button>
+
+        <!-- Fila 4 -->
+        <button class="number" data-num="4">4</button>
+        <button class="number" data-num="5">5</button>
+        <button class="number" data-num="6">6</button>
+        <button class="advanced" data-action="leftParen">(</button>
+        <button class="advanced" data-action="rightParen">)</button>
+
+        <!-- Fila 5 -->
+        <button class="number" data-num="1">1</button>
+        <button class="number" data-num="2">2</button>
+        <button class="number" data-num="3">3</button>
+        <button class="advanced" data-action="clearEntry">CE</button>
+        <button class="equal" data-action="equal">=</button>
+
+        <!-- Fila 6 -->
+        <button class="number" data-num="0">0</button>
+        <button class="number" data-num="00">00</button>
+        <button class="number" data-num=".">.</button>
+        <button class="advanced" data-action="ans">Ans</button>
+        <button class="advanced" data-action="mod">mod</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
